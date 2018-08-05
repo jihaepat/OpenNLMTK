@@ -1,5 +1,5 @@
 # Initial running
-python ./train.py -model ./models/en.sgd.iter-.2.pth -train ./data/aligned.en.refined.tok.bpe.txt -valid ./data/test.refined.tok.bpe.txt -print_every 50 -gpu_id 0 -iter_ratio_in_epoch .2 -n_epochs 20
+python ./train.py -model ./models/en.sgd.iter-.2.pth -train ./data/aligned.en.refined.tok.bpe.txt -valid ./data/test.en.tok.bpe.txt -print_every 50 -gpu_id 0 -iter_ratio_in_epoch .2 -n_epochs 20
 python ./train.py -model ./models/ted.en.sgd.iter-.2.pth -train ./data/ted.aligned.en.refined.tok.bpe.txt -valid ./data/test.refined.tok.bpe.txt -print_every 50 -gpu_id 0 -iter_ratio_in_epoch .2 -n_epochs 20
 python ./train.py -model ./models/joongang_daily.en.sgd.iter-.2.pth -train ./data/joongang_daily.aligned.en.refined.tok.bpe.txt -valid ./data/test.refined.tok.bpe.txt -print_every 50 -gpu_id 0 -iter_ratio_in_epoch .2 -n_epochs 20
 
